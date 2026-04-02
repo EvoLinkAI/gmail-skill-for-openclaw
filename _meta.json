@@ -1,0 +1,12 @@
+{
+  "name": "gmail",
+  "version": "1.0.0",
+  "description": "Gmail API integration with AI-powered summarization and drafting via EvoLink",
+  "author": "EvoLinkAI",
+  "license": "MIT",
+  "requiredEnvVars": [],
+  "optionalEnvVars": ["EVOLINK_API_KEY", "EVOLINK_MODEL"],
+  "externalServices": ["gmail.googleapis.com", "oauth2.googleapis.com", "api.evolink.ai"],
+  "requiredDependencies": ["python3", "curl"],
+  "optionalDependencies": []
+}
