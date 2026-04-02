@@ -1,7 +1,7 @@
 {
-  "name": "gmail-assistant",
-  "version": "1.1.0",
-  "description": "Gmail API integration with AI-powered summarization and drafting via EvoLink",
+  "name": "Gmail Assistant",
+  "version": "1.1.1",
+  "description": "Gmail API integration with smart AI features — read, send, search, and manage emails with Claude-powered summarization and drafting. Powered by evolink.ai",
   "author": "EvoLinkAI",
   "license": "MIT",
   "requiredFiles": ["~/.gmail-skill/credentials.json"],
