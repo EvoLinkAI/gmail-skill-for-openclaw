@@ -1,12 +1,22 @@
 {
-  "name": "gmail",
-  "version": "1.0.0",
+  "name": "gmail-assistant",
+  "version": "1.1.0",
   "description": "Gmail API integration with AI-powered summarization and drafting via EvoLink",
   "author": "EvoLinkAI",
   "license": "MIT",
+  "requiredFiles": ["~/.gmail-skill/credentials.json"],
   "requiredEnvVars": [],
-  "optionalEnvVars": ["EVOLINK_API_KEY", "EVOLINK_MODEL"],
-  "externalServices": ["gmail.googleapis.com", "oauth2.googleapis.com", "api.evolink.ai"],
+  "optionalEnvVars": ["EVOLINK_API_KEY", "EVOLINK_MODEL", "GMAIL_SKILL_DIR"],
+  "requiredBinaries": ["python3", "curl"],
+  "externalServices": [
+    "gmail.googleapis.com",
+    "oauth2.googleapis.com",
+    "accounts.google.com",
+    "api.evolink.ai"
+  ],
+  "dataTransmission": {
+    "api.evolink.ai": "When AI features (ai-summary, ai-reply, ai-prioritize) are used, email subject, sender, and body content are sent to api.evolink.ai for processing. No data is stored by EvoLink after the response is returned. AI features are optional and require explicit opt-in via EVOLINK_API_KEY."
+  },
   "requiredDependencies": ["python3", "curl"],
   "optionalDependencies": []
 }

@@ -140,7 +140,7 @@ This opens a browser window for Google OAuth consent. After authorization, token
 
 | Variable | Default | Required | Description |
 |---|---|---|---|
-| `credentials.json` | — | Yes (core) | Google OAuth client credentials. [Setup Guide](#setup-guide) |
+| `credentials.json` | — | Yes (core) | Google OAuth client credentials file at `~/.gmail-skill/credentials.json`. [Setup Guide](#setup-guide) |
 | `EVOLINK_API_KEY` | — | Optional (AI) | Your EvoLink API key for AI features. [Get one free](https://evolink.ai/signup?utm_source=clawhub&utm_medium=skill&utm_campaign=gmail) |
 | `EVOLINK_MODEL` | `claude-opus-4-6` | No | Model for AI processing. Switch to any model supported by the [EvoLink API](https://docs.evolink.ai/en/api-manual/language-series/claude/claude-messages-api?utm_source=clawhub&utm_medium=skill&utm_campaign=gmail) |
 | `GMAIL_SKILL_DIR` | `~/.gmail-skill` | No | Custom path for credential and token storage |
@@ -163,6 +163,10 @@ Use these operators with `search` and `ai-summary`:
 - `in:inbox` — In inbox
 
 ## Security
+
+**Important: Data Consent for AI Features**
+
+AI commands (`ai-summary`, `ai-reply`, `ai-prioritize`) transmit email content (subject, sender, body) to `api.evolink.ai` for processing by Claude. By setting `EVOLINK_API_KEY` and using these commands, you explicitly consent to this transmission. Data is not stored after the response is returned. If you handle sensitive or confidential emails, review [EvoLink's privacy policy](https://evolink.ai/privacy?utm_source=clawhub&utm_medium=skill&utm_campaign=gmail) before using AI features. Core Gmail operations (read, send, search, label) never transmit email content to any third party.
 
 **Credentials & Storage**
 
