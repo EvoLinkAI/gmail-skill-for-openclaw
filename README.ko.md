@@ -158,9 +158,14 @@ bash scripts/gmail.sh ai-prioritize --max 30
 
 ## 구성
 
-- 기본 AI 모델: `claude-opus-4-6`
-- 모델 변경: `export EVOLINK_MODEL="claude-sonnet-4-5-20250929"`
-- 사용자 지정 자격 증명 경로: `export GMAIL_SKILL_DIR="/custom/path"`
+| 변수 | 기본값 | 필수 | 설명 |
+|---|---|---|---|
+| `credentials.json` | — | 예 (코어) | Google OAuth 클라이언트 자격 증명. [설정 가이드](#설정-가이드) 참조 |
+| `EVOLINK_API_KEY` | — | 선택 (AI) | AI 기능용 EvoLink API 키. [무료로 받기](https://evolink.ai/signup?utm_source=github&utm_medium=skill&utm_campaign=gmail) |
+| `EVOLINK_MODEL` | `claude-opus-4-6` | 아니오 | AI 처리 모델. [EvoLink API](https://docs.evolink.ai/en/api-manual/language-series/claude/claude-messages-api?utm_source=github&utm_medium=skill&utm_campaign=gmail)에서 지원하는 모든 모델로 전환 가능 |
+| `GMAIL_SKILL_DIR` | `~/.gmail-skill` | 아니오 | 자격 증명 및 토큰의 사용자 지정 저장 경로 |
+
+필수 바이너리: `python3`, `curl`
 
 ## Gmail 쿼리 구문
 
@@ -209,7 +214,6 @@ bash scripts/gmail.sh ai-prioritize --max 30
 ## 링크
 
 - [ClawHub](https://clawhub.ai/EvoLinkAI/gmail)
-- [GitHub](https://github.com/EvoLinkAI/gmail-skill-for-openclaw)
 - [API 레퍼런스](https://docs.evolink.ai/en/api-manual/language-series/claude/claude-messages-api?utm_source=github&utm_medium=skill&utm_campaign=gmail)
 - [커뮤니티](https://discord.com/invite/5mGHfA24kn)
 - [지원](mailto:support@evolink.ai)

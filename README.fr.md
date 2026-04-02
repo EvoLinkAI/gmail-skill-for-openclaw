@@ -157,9 +157,14 @@ Resume de la boite de reception (5 emails non lus) :
 
 ## Configuration
 
-- Modele IA par defaut : `claude-opus-4-6`
-- Changer de modele : `export EVOLINK_MODEL="claude-sonnet-4-5-20250929"`
-- Chemin d'identifiants personnalise : `export GMAIL_SKILL_DIR="/custom/path"`
+Binaires requis : `python3`, `curl`
+
+| Variable | Par defaut | Requis | Description |
+|----------|-----------|--------|-------------|
+| `credentials.json` | — | Oui (principal) | Identifiants Google OAuth — consultez le [guide de configuration](#guide-de-configuration) |
+| `EVOLINK_API_KEY` | — | Optionnel (IA) | Cle API EvoLink — [inscrivez-vous ici](https://evolink.ai/signup?utm_source=github&utm_medium=skill&utm_campaign=gmail) |
+| `EVOLINK_MODEL` | `claude-opus-4-6` | Non | Modele IA — consultez la [documentation de l'API EvoLink](https://docs.evolink.ai/en/api-manual/language-series/claude/claude-messages-api?utm_source=github&utm_medium=skill&utm_campaign=gmail) |
+| `GMAIL_SKILL_DIR` | `~/.gmail-skill` | Non | Chemin personnalise pour le stockage des identifiants |
 
 ## Syntaxe de Requete Gmail
 
@@ -208,7 +213,6 @@ Resume de la boite de reception (5 emails non lus) :
 ## Liens
 
 - [ClawHub](https://clawhub.ai/EvoLinkAI/gmail)
-- [GitHub](https://github.com/EvoLinkAI/gmail-skill-for-openclaw)
 - [Reference API](https://docs.evolink.ai/en/api-manual/language-series/claude/claude-messages-api?utm_source=github&utm_medium=skill&utm_campaign=gmail)
 - [Communaute](https://discord.com/invite/5mGHfA24kn)
 - [Support](mailto:support@evolink.ai)

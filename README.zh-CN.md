@@ -150,9 +150,14 @@ bash scripts/gmail.sh ai-prioritize --max 30
 
 ## 配置
 
-- 默认 AI 模型：`claude-opus-4-6`
-- 覆盖模型：`export EVOLINK_MODEL="claude-sonnet-4-5-20250929"`
-- 自定义凭证路径：`export GMAIL_SKILL_DIR="/custom/path"`
+| 变量 | 默认值 | 必填 | 说明 |
+|---|---|---|---|
+| `credentials.json` | — | 是（核心） | Google OAuth 客户端凭证。参见[设置指南](#设置指南) |
+| `EVOLINK_API_KEY` | — | 可选（AI） | 用于 AI 功能的 EvoLink API 密钥。[免费获取](https://evolink.ai/signup?utm_source=github&utm_medium=skill&utm_campaign=gmail) |
+| `EVOLINK_MODEL` | `claude-opus-4-6` | 否 | AI 处理模型。可切换为 [EvoLink API](https://docs.evolink.ai/en/api-manual/language-series/claude/claude-messages-api?utm_source=github&utm_medium=skill&utm_campaign=gmail) 支持的任意模型 |
+| `GMAIL_SKILL_DIR` | `~/.gmail-skill` | 否 | 凭证和令牌的自定义存储路径 |
+
+必需的二进制文件：`python3`、`curl`
 
 ## 故障排除
 
@@ -165,7 +170,6 @@ bash scripts/gmail.sh ai-prioritize --max 30
 ## 链接
 
 - [ClawHub](https://clawhub.ai/EvoLinkAI/gmail)
-- [GitHub](https://github.com/EvoLinkAI/gmail-skill-for-openclaw)
 - [API 参考](https://docs.evolink.ai/en/api-manual/language-series/claude/claude-messages-api?utm_source=github&utm_medium=skill&utm_campaign=gmail)
 - [社区](https://discord.com/invite/5mGHfA24kn)
 - [支持](mailto:support@evolink.ai)

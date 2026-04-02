@@ -157,9 +157,14 @@ Gelen Kutusu Ozeti (5 okunmamis e-posta):
 
 ## Yapilandirma
 
-- Varsayilan yapay zeka modeli: `claude-opus-4-6`
-- Modeli degistirme: `export EVOLINK_MODEL="claude-sonnet-4-5-20250929"`
-- Ozel kimlik bilgisi yolu: `export GMAIL_SKILL_DIR="/custom/path"`
+Gerekli programlar: `python3`, `curl`
+
+| Degisken | Varsayilan | Gerekli | Aciklama |
+|----------|-----------|---------|----------|
+| `credentials.json` | — | Evet (temel) | Google OAuth kimlik bilgileri — [kurulum rehberine](#kurulum-rehberi) bakin |
+| `EVOLINK_API_KEY` | — | Istege bagli (YZ) | EvoLink API anahtari — [buradan kaydolun](https://evolink.ai/signup?utm_source=github&utm_medium=skill&utm_campaign=gmail) |
+| `EVOLINK_MODEL` | `claude-opus-4-6` | Hayir | YZ modeli — [EvoLink API belgelerine](https://docs.evolink.ai/en/api-manual/language-series/claude/claude-messages-api?utm_source=github&utm_medium=skill&utm_campaign=gmail) bakin |
+| `GMAIL_SKILL_DIR` | `~/.gmail-skill` | Hayir | Ozel kimlik bilgisi depolama yolu |
 
 ## Gmail Sorgu Sozdizimi
 
@@ -208,7 +213,6 @@ Gelen Kutusu Ozeti (5 okunmamis e-posta):
 ## Baglantilar
 
 - [ClawHub](https://clawhub.ai/EvoLinkAI/gmail)
-- [GitHub](https://github.com/EvoLinkAI/gmail-skill-for-openclaw)
 - [API Referansi](https://docs.evolink.ai/en/api-manual/language-series/claude/claude-messages-api?utm_source=github&utm_medium=skill&utm_campaign=gmail)
 - [Topluluk](https://discord.com/invite/5mGHfA24kn)
 - [Destek](mailto:support@evolink.ai)

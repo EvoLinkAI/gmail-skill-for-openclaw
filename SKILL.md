@@ -138,27 +138,14 @@ This opens a browser window for Google OAuth consent. After authorization, token
 
 ## Configuration
 
-### Required
+| Variable | Default | Required | Description |
+|---|---|---|---|
+| `credentials.json` | — | Yes (core) | Google OAuth client credentials. [Setup Guide](#setup-guide) |
+| `EVOLINK_API_KEY` | — | Optional (AI) | Your EvoLink API key for AI features. [Get one free](https://evolink.ai/signup?utm_source=clawhub&utm_medium=skill&utm_campaign=gmail) |
+| `EVOLINK_MODEL` | `claude-opus-4-6` | No | Model for AI processing. Switch to any model supported by the [EvoLink API](https://docs.evolink.ai/en/api-manual/language-series/claude/claude-messages-api?utm_source=clawhub&utm_medium=skill&utm_campaign=gmail) |
+| `GMAIL_SKILL_DIR` | `~/.gmail-skill` | No | Custom path for credential and token storage |
 
-- `credentials.json` — Google OAuth client credentials (see Setup Guide above)
-
-### Optional (for AI features)
-
-Set your EvoLink API key for AI-powered summarization and drafting:
-
-```bash
-export EVOLINK_API_KEY="your-key-here"
-```
-
-Default AI model: `claude-opus-4-6`
-
-To use a different model:
-
-```bash
-export EVOLINK_MODEL="claude-sonnet-4-5-20250929"
-```
-
-[Get your API key](https://evolink.ai/signup?utm_source=clawhub&utm_medium=skill&utm_campaign=gmail)
+Required binaries: `python3`, `curl`
 
 ## Gmail Query Syntax
 
@@ -206,7 +193,6 @@ This skill does not modify other skills or system settings. No elevated or persi
 
 ## Links
 
-- [ClawHub](https://clawhub.ai/EvoLinkAI/gmail)
 - [GitHub](https://github.com/EvoLinkAI/gmail-skill-for-openclaw)
 - [API Reference](https://docs.evolink.ai/en/api-manual/language-series/claude/claude-messages-api?utm_source=clawhub&utm_medium=skill&utm_campaign=gmail)
 - [Community](https://discord.com/invite/5mGHfA24kn)

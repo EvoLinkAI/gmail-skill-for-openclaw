@@ -157,9 +157,14 @@ bash scripts/gmail.sh ai-prioritize --max 30
 
 ## Конфигурация
 
-- ИИ-модель по умолчанию: `claude-opus-4-6`
-- Переопределение модели: `export EVOLINK_MODEL="claude-sonnet-4-5-20250929"`
-- Пользовательский путь к учётным данным: `export GMAIL_SKILL_DIR="/custom/path"`
+Необходимые программы: `python3`, `curl`
+
+| Переменная | По умолчанию | Обязательно | Описание |
+|-----------|-------------|------------|----------|
+| `credentials.json` | — | Да (основное) | Учётные данные Google OAuth — см. [руководство по настройке](#руководство-по-настройке) |
+| `EVOLINK_API_KEY` | — | Необязательно (ИИ) | API-ключ EvoLink — [зарегистрируйтесь здесь](https://evolink.ai/signup?utm_source=github&utm_medium=skill&utm_campaign=gmail) |
+| `EVOLINK_MODEL` | `claude-opus-4-6` | Нет | ИИ-модель — см. [документацию API EvoLink](https://docs.evolink.ai/en/api-manual/language-series/claude/claude-messages-api?utm_source=github&utm_medium=skill&utm_campaign=gmail) |
+| `GMAIL_SKILL_DIR` | `~/.gmail-skill` | Нет | Пользовательский путь для хранения учётных данных |
 
 ## Синтаксис запросов Gmail
 
@@ -208,7 +213,6 @@ bash scripts/gmail.sh ai-prioritize --max 30
 ## Ссылки
 
 - [ClawHub](https://clawhub.ai/EvoLinkAI/gmail)
-- [GitHub](https://github.com/EvoLinkAI/gmail-skill-for-openclaw)
 - [Справочник API](https://docs.evolink.ai/en/api-manual/language-series/claude/claude-messages-api?utm_source=github&utm_medium=skill&utm_campaign=gmail)
 - [Сообщество](https://discord.com/invite/5mGHfA24kn)
 - [Поддержка](mailto:support@evolink.ai)
