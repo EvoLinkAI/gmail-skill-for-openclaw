@@ -212,7 +212,7 @@ Binarios requeridos: `python3`, `curl`
 
 ## Enlaces
 
-- [ClawHub](https://clawhub.ai/EvoLinkAI/gmail)
+- [ClawHub](https://clawhub.ai/EvoLinkAI/gmail-assistant)
 - [Referencia de la API](https://docs.evolink.ai/en/api-manual/language-series/claude/claude-messages-api?utm_source=github&utm_medium=skill&utm_campaign=gmail)
 - [Comunidad](https://discord.com/invite/5mGHfA24kn)
 - [Soporte](mailto:support@evolink.ai)

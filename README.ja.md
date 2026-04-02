@@ -169,7 +169,7 @@ bash scripts/gmail.sh ai-prioritize --max 30
 
 ## リンク
 
-- [ClawHub](https://clawhub.ai/EvoLinkAI/gmail)
+- [ClawHub](https://clawhub.ai/EvoLinkAI/gmail-assistant)
 - [API リファレンス](https://docs.evolink.ai/en/api-manual/language-series/claude/claude-messages-api?utm_source=github&utm_medium=skill&utm_campaign=gmail)
 - [コミュニティ](https://discord.com/invite/5mGHfA24kn)
 - [サポート](mailto:support@evolink.ai)
